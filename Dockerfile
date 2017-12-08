@@ -5,6 +5,10 @@ FROM gobuffalo/buffalo:v0.10.1 as builder
 RUN mkdir -p $GOPATH/src/github.com/glassechidna/codechk
 WORKDIR $GOPATH/src/github.com/glassechidna/codechk
 
+RUN curl https://glide.sh/get | sh
+COPY glide.yaml glide.lock ./
+RUN glide install
+
 # this will cache the npm install step, unless package.json changes
 ADD package.json .
 RUN npm install --no-progress

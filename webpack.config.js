@@ -8,12 +8,15 @@ var CleanWebpackPlugin = require("clean-webpack-plugin");
 module.exports = {
   entry: {
     application: [
-      "./assets/js/application.js",
-      "./node_modules/jquery-ujs/src/rails.js",
+        "./assets/js/index.tsx",
       "./assets/css/application.scss"
     ]
   },
-  output: {
+    devtool: "source-map",
+    resolve: {
+        extensions: [".ts", ".tsx", ".js", ".json"]
+    },
+    output: {
     filename: "[name].[hash].js",
     path: `${__dirname}/public/assets`
   },
@@ -23,10 +26,6 @@ module.exports = {
     ], {
       verbose: false,
       watch: true
-    }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
     }),
     new ExtractTextPlugin("[name].[hash].css"),
     new CopyWebpackPlugin(
@@ -38,6 +37,22 @@ module.exports = {
         ignore: ["css/**", "js/**"]
       }
     ),
+      new CopyWebpackPlugin(
+          [{
+              from: "./node_modules/react/umd/react.development.js",
+              to: ""
+          }], {
+              copyUnmodified: true
+          }
+      ),
+      new CopyWebpackPlugin(
+          [{
+              from: "./node_modules/react-dom/umd/react-dom.development.js",
+              to: ""
+          }], {
+              copyUnmodified: true
+          }
+      ),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
@@ -47,7 +62,8 @@ module.exports = {
     })
   ],
   module: {
-    rules: [{
+    rules: [
+        {
       test: /\.jsx?$/,
       loader: "babel-loader",
       exclude: /node_modules/
@@ -91,12 +107,14 @@ module.exports = {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         use: "url-loader?limit=10000&mimetype=image/svg+xml"
       },
-      {
-        test: require.resolve("jquery"),
-        use: "expose-loader?jQuery!expose-loader?$"
-      }
+        { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+        { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
-  }
+  },
+    externals: {
+        "react": "React",
+        "react-dom": "ReactDOM"
+    }
 };
 
 if (PROD != "development") {
