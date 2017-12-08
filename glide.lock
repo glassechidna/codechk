@@ -1,0 +1,230 @@
+hash: 8df9460ac388995c0af71cd95bbacd5543fe68894f292f95f4672e64a3f26311
+updated: 2017-12-09T09:08:40.000675+11:00
+imports:
+- name: github.com/daviddengcn/go-colortext
+  version: 17e75f6184bc9e727756cd0d82e0af58b1fc7191
+- name: github.com/dustin/go-humanize
+  version: bb3d318650d48840a39aa21a027c6630e198e626
+- name: github.com/fatih/color
+  version: 570b54cabe6b8eb0bc2dfce68d964677d63b5260
+- name: github.com/fatih/structs
+  version: f5faa72e73092639913f5833b75e1ac1d6bc7a63
+- name: github.com/fsnotify/fsnotify
+  version: 4da3e2cfbabc9f751898f250b49f2439785783a1
+- name: github.com/go-sql-driver/mysql
+  version: 9181e3a86a19bacd63e68d43ae8b7b36320d8092
+- name: github.com/gobuffalo/buffalo
+  version: 4220930a985fea6cd3f207efa1f822940ab08c2b
+  subpackages:
+  - binding
+  - middleware
+  - middleware/csrf
+  - middleware/i18n
+  - middleware/ssl
+  - render
+  - worker
+- name: github.com/gobuffalo/envy
+  version: e613c80275b86293880eddeb27417c9a7c670ff3
+- name: github.com/gobuffalo/packr
+  version: 54c75d3f96df71de343c9a2048f7623620352802
+- name: github.com/gobuffalo/plush
+  version: 07945e716c6e71b7faa5f63b8c433cae4612514f
+  subpackages:
+  - ast
+  - lexer
+  - parser
+  - token
+- name: github.com/gobuffalo/tags
+  version: 496f2d070b93cbab8d3802318292f6f804e8d9c2
+  subpackages:
+  - form
+  - form/bootstrap
+- name: github.com/gobuffalo/x
+  version: a0001ffdf4068b86245fb2ca6e187449b75b2371
+  subpackages:
+  - httpx
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 5ab525f4fb1678e197ae59401e9050fa0b6cb5fd
+- name: github.com/gorilla/securecookie
+  version: e59506cc896acb7f7bf732d4fdf5e25f7ccd8983
+- name: github.com/gorilla/sessions
+  version: a3acf13e802c358d65f249324d14ed24aac11370
+- name: github.com/gorilla/websocket
+  version: c55883f97322b4bcbf48f734e23d6ab3af1ea488
+- name: github.com/jmoiron/sqlx
+  version: 99f3ad6d85ae53d0fecf788ab62d0e9734b3c117
+  subpackages:
+  - reflectx
+- name: github.com/joho/godotenv
+  version: 6d367c18edf6ca7fd004efd6863e4c5728fa858e
+- name: github.com/lib/pq
+  version: 83612a56d3dd153a94a629cd64925371c9adad78
+  subpackages:
+  - oid
+- name: github.com/markbates/going
+  version: 0576708c56cea02331f864fe6e157ac7841923e4
+  subpackages:
+  - defaults
+  - randx
+  - wait
+- name: github.com/markbates/grift
+  version: 00c5a41d8f71f72709c0b90f8da447758f18faa9
+  subpackages:
+  - grift
+- name: github.com/markbates/inflect
+  version: 8656ca7f45f5ed737dbe42c370dc31d1f583b7f5
+- name: github.com/markbates/pop
+  version: fd3f5a10dad89bbd5d257fef56de9ac2cacba860
+  subpackages:
+  - columns
+  - fizz
+  - fizz/translators
+  - nulls
+- name: github.com/markbates/refresh
+  version: 31a58af168f3788ce36d49f66aca4b439f64c7d4
+  subpackages:
+  - refresh
+  - refresh/web
+- name: github.com/markbates/sigtx
+  version: 1c5462d668eac5bf96b5773aa44d5c6ce8b12c99
+- name: github.com/markbates/validate
+  version: cd8cc34c703420d6b084fbbfd5085e8e71c5b830
+  subpackages:
+  - validators
+- name: github.com/mattn/anko
+  version: fac5b070e74d08a6d857626c9b48b88be96b340a
+  subpackages:
+  - ast
+  - builtins
+  - builtins/encoding/json
+  - builtins/errors
+  - builtins/flag
+  - builtins/fmt
+  - builtins/github.com/daviddengcn/go-colortext
+  - builtins/io
+  - builtins/io/ioutil
+  - builtins/math
+  - builtins/math/big
+  - builtins/math/rand
+  - builtins/net
+  - builtins/net/http
+  - builtins/net/url
+  - builtins/os
+  - builtins/os/exec
+  - builtins/os/signal
+  - builtins/path
+  - builtins/path/filepath
+  - builtins/regexp
+  - builtins/runtime
+  - builtins/sort
+  - builtins/strings
+  - builtins/time
+  - parser
+  - vm
+- name: github.com/mattn/go-colorable
+  version: 5411d3eea5978e6cdc258b30de592b60df6aba96
+  repo: https://github.com/mattn/go-colorable
+- name: github.com/mattn/go-isatty
+  version: 57fdcb988a5c543893cc61bce354a6e24ab70022
+  repo: https://github.com/mattn/go-isatty
+- name: github.com/mattn/go-sqlite3
+  version: d5ffb5c0cca8778699a929b236766f4a7af674e8
+- name: github.com/microcosm-cc/bluemonday
+  version: 68fecaef60268522d2ac3f0123cec9d3bcab7b6e
+- name: github.com/mitchellh/go-homedir
+  version: b8bc1bf767474819792c23f32d8286a45736f1c6
+- name: github.com/monoculum/formam
+  version: f25191ae7744720978b0a6431764360b09b327a5
+- name: github.com/nicksnyder/go-i18n
+  version: aa0ce51472e0a9982717fd19cf02cb08b1e433aa
+  subpackages:
+  - i18n
+  - i18n/bundle
+  - i18n/language
+  - i18n/translation
+- name: github.com/pelletier/go-buffruneio
+  version: c37440a7cf42ac63b919c752ca73a85067e05992
+- name: github.com/pelletier/go-toml
+  version: 23f644976aa7c724adf4aec911dadf4af17840ab
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/russross/blackfriday
+  version: 6d1ef893fcb01b4f50cb6e57ed7df3e2e627b6b2
+- name: github.com/satori/go.uuid
+  version: 5bf94b69c6b68ee1b541973bb8e1144db23a194b
+- name: github.com/serenize/snaker
+  version: a683aaf2d516deecd70cad0c72e3ca773ecfcef0
+- name: github.com/sergi/go-diff
+  version: 1744e2970ca51c86172c8190fadad617561ed6e7
+  subpackages:
+  - diffmatchpatch
+- name: github.com/shurcooL/github_flavored_markdown
+  version: 28433ea3fc83827d77424782fefdcd94703366cc
+- name: github.com/shurcooL/highlight_diff
+  version: 09bb4053de1b1d872a9f25dc21378fa71dca4e4e
+- name: github.com/shurcooL/highlight_go
+  version: 78fb10f4a5f89e812a5e26ab723b954a51226086
+- name: github.com/shurcooL/octiconssvg
+  version: 38b02129bb6460858e11f90798a3832da1e502bd
+- name: github.com/shurcooL/sanitized_anchor_name
+  version: 86672fcb3f950f35f2e675df2240550f2a50762f
+- name: github.com/sirupsen/logrus
+  version: d682213848ed68c0a260ca37d6dd5ace8423f5ba
+- name: github.com/sourcegraph/annotate
+  version: f4cad6c6324d3f584e1743d8b3e0e017a5f3a636
+- name: github.com/sourcegraph/syntaxhighlight
+  version: bd320f5d308e1a3c4314c678d8227a0d72574ae7
+- name: github.com/unrolled/secure
+  version: 0f73fc7feba662a2ad5ff887fe203af08f8f8716
+- name: golang.org/x/crypto
+  version: 84f24dfdf3c414ed893ca1b318d0045ef5a1f607
+  subpackages:
+  - bcrypt
+  - blowfish
+  - ssh/terminal
+- name: golang.org/x/net
+  version: dc871a5d77e227f5bbf6545176ef3eeebf87e76e
+  subpackages:
+  - context
+  - html
+  - html/atom
+- name: golang.org/x/sync
+  version: fd80eb99c8f653c847d294a001bdf2a3a6f768f5
+  subpackages:
+  - errgroup
+- name: golang.org/x/sys
+  version: e24f485414aeafb646f6fca458b0bf869c0880a1
+  repo: https://go.googlesource.com/sys
+  subpackages:
+  - unix
+- name: google.golang.org/appengine
+  version: 9d8544a6b2c7df9cff240fcf92d7b2f59bc13416
+  subpackages:
+  - cloudsql
+- name: gopkg.in/yaml.v2
+  version: cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b
+testImports:
+- name: github.com/ajg/form
+  version: 523a5da1a92f01b01f840b61689c0340a0243532
+- name: github.com/davecgh/go-spew
+  version: 04cdfd42973bb9c8589fd6a731800cf222fde1a9
+  subpackages:
+  - spew
+- name: github.com/gobuffalo/suite
+  version: 985d7acf9588fa61c095bc5d357483e00e511ea3
+- name: github.com/markbates/hmax
+  version: 800e180dcd16937a4cc134c6aa8c8407e62ce880
+- name: github.com/markbates/willie
+  version: 0d410d9260d1a798877ee05fc8d67a608b67fe6b
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: 2aa2c176b9dab406a6970f6a55f513e8a8c8b18f
+  subpackages:
+  - assert
+  - require
+  - suite

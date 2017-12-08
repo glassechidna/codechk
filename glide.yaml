@@ -1,0 +1,22 @@
+package: github.com/glassechidna/codechk
+import:
+- package: github.com/gobuffalo/buffalo
+  version: ^0.10.2
+  subpackages:
+  - middleware
+  - middleware/csrf
+  - middleware/i18n
+  - middleware/ssl
+  - render
+- package: github.com/gobuffalo/envy
+  version: ^1.3.0
+- package: github.com/gobuffalo/packr
+  version: ^1.9.4
+- package: github.com/markbates/grift
+  subpackages:
+  - grift
+- package: github.com/markbates/pop
+  version: ^3.41.1
+- package: github.com/unrolled/secure
+testImport:
+- package: github.com/gobuffalo/suite
