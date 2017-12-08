@@ -13,6 +13,7 @@ before_script:
 go_import_path: github.com/glassechidna/codechk
 
 install:
+  - curl https://glide.sh/get | sh
   - glide install
 
 script: buffalo test
