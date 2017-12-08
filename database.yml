@@ -1,0 +1,11 @@
+development:
+  dialect: "sqlite3"
+  database: /Users/aidan/dev/go/src/github.com/glassechidna/codechk/codechk_development.sqlite
+
+test:
+  dialect: "sqlite3"
+  database: /Users/aidan/dev/go/src/github.com/glassechidna/codechk/codechk_test.sqlite
+
+production:
+  dialect: "sqlite3"
+  database: /Users/aidan/dev/go/src/github.com/glassechidna/codechk/codechk_production.sqlite
