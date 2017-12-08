@@ -8,11 +8,11 @@ env:
   - GO_ENV=test
 
 before_script:
-- mkdir -p $TRAVIS_BUILD_DIR/public/assets
+  - mkdir -p $TRAVIS_BUILD_DIR/public/assets
 
 go_import_path: github.com/glassechidna/codechk
 
 install:
-  - go get github.com/gobuffalo/buffalo/buffalo
-- go get $(go list ./... | grep -v /vendor/)
+  - glide install
+
 script: buffalo test
