@@ -16,7 +16,7 @@
     "extract-text-webpack-plugin": "2.1.2",
     "file-loader": "~0.11.2",
     "font-awesome": "~4.7.0",
-    "node-sass": "~4.5.3",
+    "node-sass": "~7.0.0",
     "npm-install-webpack-plugin": "4.0.4",
     "path": "~0.12.7",
     "react": "^16.1.1",
